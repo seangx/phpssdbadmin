@@ -12,13 +12,13 @@ return array(
 	),
 	'servers' => array(
 		array(
-			'host' => '127.0.0.1',
-			'port' => '8888',
-			//'password' => '22222222',
+			'host' => $_ENV["DB_HOST"],
+			'port' => $_ENV["DB_PORT"],
+			'password' => $_ENV["DB_AUTH"],
 		),
 	),
 	'login' => array(
-		'name' => 'test',
-		'password' => '123456781', // at least 6 characters
+		'name' => $_ENV["USERNAME"],
+		'password' => $_ENV["USER_PWD"], // at least 6 characters
 	),
 );
