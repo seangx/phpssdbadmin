@@ -16,6 +16,16 @@ return array(
 			'port' => $_ENV["DB_PORT"],
 			'password' => $_ENV["DB_AUTH"],
 		),
+		array(
+			'host' => $_ENV["DB_HOST2"],
+			'port' => $_ENV["DB_PORT2"],
+			'password' => $_ENV["DB_AUTH2"],
+		),
+		array(
+			'host' => $_ENV["DB_HOST3"],
+			'port' => $_ENV["DB_PORT3"],
+			'password' => $_ENV["DB_AUTH3"],
+		),
 	),
 	'login' => array(
 		'name' => $_ENV["USERNAME"],
