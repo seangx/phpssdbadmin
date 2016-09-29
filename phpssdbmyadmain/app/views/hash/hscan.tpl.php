@@ -106,7 +106,7 @@ function edit_selected(){
 	}
 	var n = <?php echo json_encode($n)?>;
 	var url = <?php echo json_encode(_url('hash/hset'))?> + '?' + $.param({n: n, k: ks});
-	location.href = url;
+	$url = url;
 }
 
 function remove_selected(){
@@ -117,7 +117,7 @@ function remove_selected(){
 	}
 	var n = <?php echo json_encode($n)?>;
 	var url = <?php echo json_encode(_url('hash/hdel'))?> + '?' + $.param({n: n, k: ks});
-	location.href = url;
+	$url = url;
 }
 </script>
 
